@@ -1,0 +1,20 @@
+traffic-management-system/
+├── client/                 # Frontend React application
+│   ├── src/
+│   │   ├── components/     # React components
+│   │   ├── App.js          # Main application component
+│   │   ├── index.js        # Entry point for React application
+│   │   └── ...
+│   ├── public/             # Public files (index.html, etc.)
+│   └── package.json        # Frontend dependencies and scripts
+├── server/                 # Backend Node.js server
+│   ├── src/
+│   │   ├── routes/         # API routes
+│   │   ├── controllers/    # Route controllers
+│   │   ├── models/         # MongoDB models
+│   │   └── ...
+│   ├── config.js           # AWS and MongoDB configuration
+│   ├── server.js           # Entry point for Node.js server
+│   └── package.json        # Backend dependencies and scripts
+├── .gitignore              # Files to ignore in Git
+└── README.md               # Project README file

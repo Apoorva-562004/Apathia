@@ -1,0 +1,25 @@
+import React, { useState } from 'react';
+import { MapControl } from '@azure/maps-control';
+
+function App() {
+    
+const [mapInstance] = useState(new MapControl({
+        mapOptions:{
+            center:[37.7749,-122.4194],
+            zoomLevel:12,
+        },
+        authOptions:{
+            subscriptionKey:"your_subscription_key",
+            clientId:"your_client_id",
+            clientSecret:"your_client_secret",
+        }
+}));
+
+return (
+<div>
+<MapControl ref={mapInstance} />
+</div>
+);
+}
+
+export default App;

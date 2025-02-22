@@ -1,0 +1,26 @@
+from azure.iot.hub import IoTHubRegistryManager 
+
+# Replace placeholders 
+CONNECTION_STRING='HostName=<IoTHubName>.azure-devices.net;SharedAccessKeyName=<PolicyName>;SharedAccessKey=<PrimaryKey>' 
+
+def process_sensor_data(device_id):
+    
+iothub_registry_manager=IoTHubRegistryManager(CONNECTION_STRING)
+
+messages=[]
+while True:
+message_count=iothub_registry_manager.receive_messages(device_id)
+if message_count==None or len(message_count)==0 :
+break;
+else :
+messages.extend(message_count)
+
+return messages
+    
+if __name__ == "__main__":
+device_id='YourDeviceID' 
+    
+sensor_data=process_sensor_data(device_id) 
+    
+print(sensor_data)
+

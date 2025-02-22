@@ -1,0 +1,16 @@
+graph LR
+    participant User as "Citizens/Planners"
+    participant WebApp as "Web Application"
+    participant APIGateway as "API Gateway"
+    participant MapsService as "Azure Maps Service"
+    participant DTService as "Azure Digital Twins Service"
+    participant IotHub as "Azure IoT Hub"
+    participant MLService as "Azure Machine Learning Service"
+
+    User->>WebApp: Interact with App
+    WebApp->>APIGateway: Send Requests
+    APIGateway->>MapsService: Get Traffic Updates & Routing Info
+    APIGateway->>DTService: Access Infrastructure Models
+    APIGateway->>IotHub: Fetch Sensor Data
+    IotHub->>MLService: Train/Predict Traffic Patterns
+

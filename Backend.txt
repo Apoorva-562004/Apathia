@@ -1,0 +1,15 @@
+const express = require('express');
+const app = express();
+const axios = require('axios');
+
+app.get('/trafficUpdates', async(req,res) => {
+try{
+let response=await axios.get(`https://atlas.microsoft.com/traffic/incidents/json?subscription-key=${process.env.AZURE_MAPS_KEY}&api-version=1`);
+res.json(response.data);
+}catch(e){
+console.error(e);
+res.status(500).send("Failed fetching updates");
+}
+});
+
+app.listen(3000,'localhost', () => console.log('Server running'));
