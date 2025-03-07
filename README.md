@@ -9,7 +9,7 @@ An Intelligent Traffic Optimization System designed to improve urban traffic flo
 
 - **Real-time Traffic Monitoring**: The system uses IoT sensors to monitor traffic conditions in real-time.
 - **Traffic Optimization**: Through real-time data analytics, the system identifies congestion points and suggests optimal routes to reduce congestion.
-- **Data Storage and Analysis**: Data collected from IoT sensors is stored in MongoDB and analyzed to identify trends and patterns in traffic flow.
+- **Data Storage and Analysis**: Data collected from IoT sensors is stored in CosmosDB and analyzed to identify trends and patterns in traffic flow.
 
 
 ## Usage
