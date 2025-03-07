@@ -1,11 +1,10 @@
 # Real-Time Smart Traffic Management System
 
-This project is an Intelligent Traffic Optimization System built using React for the frontend, AWS for deployment, Mapbox for mapping, and MongoDB for data storage.
+This project is an Intelligent Traffic Optimization System built using React for the frontend, Azure for deployment, Mapbox for mapping, and CosmosDB for data storage.
 
 ## Overview
 
-The Real-Time Smart Traffic Management System is designed to optimize traffic flow in urban areas by leveraging IoT sensors and real-time data analytics. The system aims to reduce congestion and improve overall traffic efficiency.
-
+An Intelligent Traffic Optimization System designed to improve urban traffic flow using IoT sensors and real-time data analytics. This system helps reduce congestion by suggesting optimized routes based on real-time conditions.
 ## Features
 
 - **Real-time Traffic Monitoring**: The system uses IoT sensors to monitor traffic conditions in real-time.
@@ -21,15 +20,25 @@ The Real-Time Smart Traffic Management System is designed to optimize traffic fl
 
 ## Deployment
 
-The application is deployed on AWS for scalability and reliability. To deploy the application on AWS, follow these steps:
+The application is deployed on Azure for scalability and reliability. To deploy the application on Azure, follow these steps:
 
-1. Set up an AWS account and create an EC2 instance.
-2. Install Node.js and MongoDB on the EC2 instance.
-3. Clone the repository to the EC2 instance.
-4. Install dependencies and start the application.
+Step 1: Set Up Azure Resources
+Step 2: Backend Deployment (Node.js + Express.js)
+Step 3: Frontend Deployment (React + Mapbox)
+Step 4: IoT Data Processing Setup
+Step 5: API & Security Setup
+Step 6: Monitoring & Optimization
 
 ## Results
 ![Screenshot 2024-03-13 at 11 53 43 AM](https://github.com/Rahulraonimbalkar/Smart_traffic_management_system/assets/117708809/0af34131-fed6-4150-9142-62a394e84767)
+
+**##Technologies Used**
+•	Frontend: React.js (for user interface & visualization)
+•	Backend: Node.js + Express.js (for API & data processing)
+•	Database: Azure Cosmos DB (for traffic data storage)
+•	Mapping: Mapbox (for real-time traffic visualization)
+•	Cloud Platform: Azure
+•	IoT Integration: Azure IoT Hub (for real-time sensor data collection)
 
 ## Contribution
 
